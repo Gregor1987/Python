@@ -52,7 +52,7 @@ b = side_length('2')
 c = side_length('3')
 
 if a > b + c or b > a + c or c > a + b:
-    print('such triangle cannot not exist')
+    print('such triangle cannot exist')
 else:
     print('This is', end=' ')
     if a == b == c:
@@ -81,7 +81,6 @@ while True:
         num = input('incorrect input, please, try again: ')
 
 MAX_RANGE = int(num ** 0.5)
-check = False
 for i in range(2, MAX_RANGE + 1):
     if num % i == 0:
         print('not prime number')
