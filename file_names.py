@@ -14,7 +14,7 @@ def random_names(file_name: str, names_count: int):
                 name = list(name)
                 name[random.randint(0, name_length - 1)] = letters.get(random.randint(1, 5))
                 name = ''.join(name)
-            print(name. capitalize(), end='\n', file=f)
+            print(name.capitalize(), file=f)
 
 
-random_names('new_names', 10)
+random_names('new_names', 15)
