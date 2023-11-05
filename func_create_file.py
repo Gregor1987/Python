@@ -21,6 +21,6 @@ def create_file(ext, min_len=6, max_len=30, min_byte=256, max_byte=4096, num_fil
                 break
 
 
-mult_files('new_folder', txt=3, cfg=1, avi=1, png=2, mov=3, jpg=2)
+mult_files('new_folder', txt=5, cfg=3)
 
 

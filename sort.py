@@ -3,8 +3,7 @@ import shutil
 
 
 def sort(folder, **kwargs):
-    print(kwargs)
-    for _ , _,  files in os.walk(folder):
+    for _, _,  files in os.walk(folder):
         for file in files:
             ext = file.split('.')[-1]
             for item in kwargs:
