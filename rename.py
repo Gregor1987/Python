@@ -1,5 +1,4 @@
 import os
-import shutil
 
 
 def rename_files(numbers_count: int, ext_init: str, ext_final: str, init_range: tuple, folder: str, file_name=''):
