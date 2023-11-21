@@ -47,7 +47,7 @@ class Project:
                 self.user = user
                 break
         else:
-            raise AccessException
+            raise AccessException(login_name)
 
     def add_user(self):
         new_user_name = input("input new user's name: ")
