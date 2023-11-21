@@ -25,7 +25,7 @@ def add_to_base():
                     users_dict[access_level] = {user_id: user_name}
             with open('users.json', 'w', encoding='utf-8') as f:
                 json.dump(dict(sorted(users_dict.items())), f, indent=2)
-        except FileNotFoundError and JSONDecodeError:
+        except FileNotFoundError or JSONDecodeError:
             with open('users.json', 'w', encoding='utf-8') as f:
                 json.dump(user, f, indent=2)
 
